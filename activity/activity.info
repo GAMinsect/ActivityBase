@@ -1,0 +1,8 @@
+[Activity]
+name = ColorSquare
+bundle_id = org.sugarlabs.ColorSquare
+icon = activity-icon
+exec = sugar-activity3 Base.Base
+activity_version = 1
+license = GPLv3+
+
