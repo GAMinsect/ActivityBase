@@ -29,7 +29,7 @@ class BaseGame:
                     return
                 if event.type==pygame.MOUSEBUTTONDOWN:
                     mouse_pos=pygame.mouse.get_pos()
-                    mouse_pressed=pygame.get_pressed()[0]
+                    mouse_pressed=pygame.mouse.get_pressed()[0]
                     if player.collidepoint(mouse_pos) and mouse_pressed:
                         value+=1
             
