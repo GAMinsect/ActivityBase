@@ -24,7 +24,7 @@ class BaseGame:
             if not self.running:
                 break
                 
-            for event in pygame.event_get():
+            for event in pygame.event.get():
                 if event.type==pygame.QUIT:
                     return
                 if event.type==pygame.MOUSEBUTTONDOWN:
