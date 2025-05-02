@@ -3,7 +3,7 @@ import gi
 gi.require_version("Gtk","3.0")
 from gi.repository import Gtk
 
-class BaseGame:
+class DummyGame:
     def __init__(self):
         self.clock=pygame.time.Clock()
 
