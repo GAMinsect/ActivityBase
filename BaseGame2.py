@@ -9,6 +9,7 @@ class BaseGame2:
         self.clock=pygame.time.Clock()
 
     def initialize(self):
+        pygame.init()
         self.running=True
         self.screen=pygame.display.get_surface()
         self.width=self.screen.get_width()
