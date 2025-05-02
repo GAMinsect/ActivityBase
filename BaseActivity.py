@@ -11,7 +11,7 @@ from sugar3.graphics.toolbutton import ToolButton
 from sugar3.activity.widgets import StopButton
 
 import sugargame.canvas
-import BaseGame
+import BaseGame2
 
 class Base(Activity):
     def __init__(self,handle):
@@ -20,7 +20,7 @@ class Base(Activity):
         self.paused=False
 
         #Create the game instance
-        self.game=BaseGame.BaseGame()
+        self.game=BaseGame2.BaseGame2()
 
         #Build the activity toolbar
         self.build_toolbar()
