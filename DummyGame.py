@@ -1,4 +1,4 @@
-import pygame
+'''import pygame
 import gi
 gi.require_version("Gtk","3.0")
 from gi.repository import Gtk
@@ -35,4 +35,4 @@ class DummyGame:
             
             pygame.draw.rect(screen,(value,0,0),player)
             pygame.display.update()
-
+'''
