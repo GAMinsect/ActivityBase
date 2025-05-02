@@ -14,7 +14,6 @@ class BaseGame2:
         self.screen=pygame.display.get_surface()
         self.width=self.screen.get_width()
         self.height=self.screen.get_height()
-        self.player=pygame.Rect(100,100,100,100)
         self.colors=[(100,100,100),(10,10,200),(200,10,0),(10,100,200)]
         self.list=ColorSelection(4,self.colors,self.screen,10,10,200,100)
         self.sq=Button((50,100,200),self.screen,400,400,100,100)
@@ -31,7 +30,7 @@ class BaseGame2:
         cache_color=self.sq.color
 
         while self.running:
-            self.screen.fill((94,252,237))
+            
 
             #Process Gtk messages
             while Gtk.events_pending():
@@ -43,14 +42,12 @@ class BaseGame2:
             for event in pygame.event.get(): 
                 if event.type==pygame.QUIT:
                     return
-                if event.type==pygame.MOUSEBUTTONUP:
-                    self.screen.fill((180,180,150))
-                    self.list.draw()
-                    self.check.draw()
-                    self.sq.draw()
             res=self.list.is_pressed() #Were I store the value if any button is pressed
             if res!=None: change_color(res,self.sq)
-
-            pygame.draw.rect(self.screen,(value,0,0),self.player)
+            self.screen.fill((180,180,150))
+            self.list.draw()
+            self.check.draw()
+            self.sq.draw()
+            
             pygame.display.update()
 
