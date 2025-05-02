@@ -4,7 +4,7 @@ gi.require_version("Gtk","3.0")
 from gi.repository import Gtk
 from Button import *
 
-class BaseGame:
+class BaseGame2:
     def __init__(self):
         self.clock=pygame.time.Clock()
 
@@ -17,7 +17,7 @@ class BaseGame:
         self.colors=[(100,100,100),(10,10,200),(200,10,0),(10,100,200)]
         self.list=ColorSelection(4,self.colors,self.screen,10,10,200,100)
         self.sq=Button((50,100,200),self.screen,400,400,100,100)
-        self.check=Button((188, 223, 145),self.screen,self.width//2-100,self.height//7,200,100,"CONTROLLA",pygame.font.SysFont(None,30))
+        self.check=Button((188, 223, 145),self.screen,self.width//2-100,self.height//7,200,100,None,pygame.font.SysFont(None,30))
         self.run()
 
         
