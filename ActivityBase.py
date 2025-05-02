@@ -13,7 +13,7 @@ from sugar3.activity.widgets import StopButton
 import sugargame.canvas
 import BaseGame2
 
-class Base(Activity):
+class BaseActivity(Activity):
     def __init__(self,handle):
         Activity.__init__(self,handle)
 
