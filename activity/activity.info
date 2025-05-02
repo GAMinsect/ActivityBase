@@ -2,7 +2,7 @@
 name = Base
 bundle_id = org.sugarlabs.ColorSquare
 icon = activity-icon
-exec = sugar-activity3 BaseActivity.Base
+exec = sugar-activity3 ActivityBase.BaseActivity
 activity_version = 1
 license = GPLv3+
 
