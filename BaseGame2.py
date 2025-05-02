@@ -58,7 +58,7 @@ class BaseGame2:
             res=self.Field.is_pressed() #If any of the Field tile are pressed
             if res!=None: change_color(cache_color,res)
 
-            if self.check.is_pressed() and self.Field.win(self.t1)
+            if self.check.is_pressed() and self.Field.win(self.t1):
                 print("WIN")
             
             self.screen.fill((180,180,150))
