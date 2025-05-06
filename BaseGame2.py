@@ -19,7 +19,7 @@ class BaseGame2:
         self.list=ColorSelection(4,self.colors,self.screen,10,10,200,100)
         self.sq=Button((50,100,200),self.screen,10,420,100,100)
         self.font_size=100
-        self.font=pygame.font.SysFont(None,font_size)
+        self.font=pygame.font.SysFont(None,self.font_size)
         self.check=Button((188, 223, 145),self.screen,self.width//2-100,self.height//7,200,100,None,self.font)
 
         
