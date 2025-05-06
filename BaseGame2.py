@@ -64,8 +64,9 @@ class BaseGame2:
             if res!=None: change_color(cache_color,res)
 
             if self.check.is_pressed() and self.Field.win(self.t1):
-                win_text = self.font.render("Solved!", True, (0, 0, 0))
-                self.screen.blit(win_text,win_text.get_rect(center=(self.width//2, self.height//2)))
+                win_text = self.font.render("Solved!", True, (150, 100, 100))
+                self.screen.blit(win_text,win_text.get_rect(center=(self.width//2, self.height//2-20)))
+                time.sleep(3)
                 pygame.display.update() 
                 
             
