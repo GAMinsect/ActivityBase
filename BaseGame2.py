@@ -68,8 +68,8 @@ class BaseGame2:
                 if self.Field.win(self.t1):
                     win_text = self.font.render("Solved!", True, (150, 100, 100))
                     self.screen.blit(win_text,win_text.get_rect(center=(self.width//2, self.height//2-20)))
-                    time.sleep(3)
                     pygame.display.update() 
+                    time.sleep(3)
                     self.running=False
                 else:
                     lose_text = self.font.render("ERROR!", True, (230, 20, 20))
