@@ -4,6 +4,7 @@ gi.require_version("Gtk","3.0")
 from gi.repository import Gtk
 from Button import *
 from Graph_Squares import *
+import time
 
 class BaseGame2:
     def __init__(self):
