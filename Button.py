@@ -11,7 +11,7 @@ class Button:
         self.x=x
         self.y=y
         self.width=width
-        slef.height=height
+        self.height=height
     
     def draw_text(self):
         img=self.font.render(self.text,True,(0,0,0))
