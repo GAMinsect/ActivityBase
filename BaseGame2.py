@@ -63,7 +63,7 @@ class BaseGame2:
             res=self.Field.is_pressed() #If any of the Field tile are pressed
             if res!=None: change_color(cache_color,res)
 
-            if self.check.is_pressed()
+            if self.check.is_pressed():
                 if self.Field.win(self.t1):
                     win_text = self.font.render("Solved!", True, (150, 100, 100))
                     self.screen.blit(win_text,win_text.get_rect(center=(self.width//2, self.height//2-20)))
