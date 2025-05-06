@@ -26,11 +26,11 @@ class BaseGame2:
         
 
         #Add tiles
-        self.t1=Square(self.screen,300,300,100,100)
-        self.t2=Square(self.screen,400,300,100,100)
-        self.t3=Square(self.screen,300,400,100,200)
-        self.t4=Square(self.screen,400,500,100,100)
-        self.t5=Square(self.screen,400,400,100,100)
+        self.t1=Square(self.screen,220,220,100,100)
+        self.t2=Square(self.screen,320,220,100,100)
+        self.t3=Square(self.screen,220,320,100,200)
+        self.t4=Square(self.screen,320,420,100,100)
+        self.t5=Square(self.screen,320,320,100,100)
 
         self.Field=PlayField(self.screen)
         self.Field.add(self.t1,self.t2)
