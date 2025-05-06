@@ -28,9 +28,17 @@ class BaseGame2:
         #Add tiles
         self.t1=Square(self.screen,300,300,100,100)
         self.t2=Square(self.screen,400,300,100,100)
+        self.t3=Square(self.screen,300,400,100,200)
+        self.t4=Square(self.screen,400,500,100,100)
+        self.t5=Square(self.screen,400,400,100,100)
 
         self.Field=PlayField(self.screen)
         self.Field.add(self.t1,self.t2)
+        self.Field.add(self.t1,self.t3)
+        self.Field.add(self.t2,self.t5)
+        self.Field.add(self.t3,self.t5)
+        self.Field.add(self.t3,self.t4)
+        self.Field.add(self.t4,self.t5)
 
         #Run Game
         self.run()
@@ -66,11 +74,11 @@ class BaseGame2:
 
             if self.check.is_pressed():
                 if self.Field.win(self.t1):
-                    win_text = self.font.render("Solved!", True, (150, 100, 100))
+                    win_text = self.font.render("Solved!", True, (10, 230, 10))
                     self.screen.blit(win_text,win_text.get_rect(center=(self.width//2, self.height//2-20)))
                     pygame.display.update() 
                     time.sleep(3)
-                    self.running=False
+                    
                 else:
                     lose_text = self.font.render("ERROR!", True, (230, 20, 20))
                     self.screen.blit(lose_text,lose_text.get_rect(center=(self.width//2, self.height//2-20)))
